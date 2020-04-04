@@ -124,7 +124,7 @@ open class OCDataManager :Object{
         //@step
         request.responseData {[weak self] (response:DataResponse<Data>) in
          
-             Tracer.debug("\(self)->responseData:", response)
+            //Tracer.debug(self,"->responseData:", response)
             switch response.result {
                 case .success:
                     OCDataManager.handleSuccess(response, service: service, success: success)
@@ -149,6 +149,9 @@ open class OCDataManager :Object{
            
         }
         //@step fire success
+        if  Tracer.isDebug,  let data = rep.result.value as Data? {
+            Tracer.debugJsonData("responseData:",data)
+        }
         return success(rep.result.value as AnyObject? );
     }
 

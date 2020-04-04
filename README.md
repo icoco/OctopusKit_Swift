@@ -9,11 +9,18 @@ OctopusKit is a simplicity but graceful solution for invoke RESTful web service 
  All RESTfull APIs will be map to a static method, that will be easy maintenance, easy extendable also simply to apply in App development.
  
 
-It based Alamofire
+
+## Layer Diagram
+
+![image](img/layer.png?raw=true)
+
 
 ##Notice
 
-Please check the OpenCartService example also the TestCase file, understand the usage then enjoy the way~
+Please check the SDK TestCase file, understand the usage then enjoy the way~
+
+
+It based Alamofire
 
 ## License
 

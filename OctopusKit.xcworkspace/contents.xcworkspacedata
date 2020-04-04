@@ -2,12 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Example/OpenCart.xcodeproj">
+      location = "group:DemoApp/DemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SDK/SDK.xcodeproj">
    </FileRef>
    <FileRef
       location = "container:OctopusKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Vendors/Alamofire-4.4.0/Alamofire.xcodeproj">
+      location = "group:Vendors/Alamofire-4.7.1/Alamofire.xcodeproj">
    </FileRef>
 </Workspace>

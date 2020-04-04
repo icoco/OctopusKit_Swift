@@ -22,8 +22,7 @@ public class OCResponse :Object {
         return self.dataResponse!
     }
     deinit {
-        debugPrint("OCResponse->deinit");
-        debugPrint(self,"->deinit")
+        Tracer.debug(self,"->deinit")
     }
 
 }
